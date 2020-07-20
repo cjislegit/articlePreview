@@ -2,6 +2,7 @@ body {
   background-color: hsl(210, 46%, 95%);
   display: flex;
   justify-content: center;
+  font-family: 'Manrope', sans-serif;
 }
 
 .component {
