@@ -34,3 +34,35 @@ body {
   padding-top: 10px;
   font-size: 13px;
 }
+
+.share {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 30px 10% 0 10%;
+}
+
+.share .avatar {
+  background-image: url('./assets/avatar-michelle.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  height: 30px;
+  grid-column-start: 1;
+  align-self: center;
+}
+
+.share .name,
+.share .date {
+  grid-column-start: 2;
+  font-size: 13px;
+}
+
+.share .shareIcon {
+  grid-column-start: 3;
+  background-image: url('./assets/icon-share.svg');
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  align-self: center;
+}
