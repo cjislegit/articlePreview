@@ -23,37 +23,55 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 10% 0 10%;
+  line-height: 1.6;
 }
 
 .article .intro {
   padding-top: 30px;
   font-weight: 700;
+  color: hsl(217, 19%, 35%);
 }
 
 .article .body {
   padding-top: 10px;
   font-size: 13px;
+  color: hsl(214, 17%, 51%);
 }
 
 .share {
   display: grid;
+  height: 70ps;
   grid-template-columns: auto auto auto;
-  padding: 30px 10% 0 10%;
+  grid-template-rows: auto auto;
+  padding: 30px 10% 20px 10%;
 }
 
 .share .avatar {
   background-image: url('./assets/avatar-michelle.jpg');
+  background-position: center;
   background-size: cover;
   border-radius: 50%;
-  height: 30px;
+  height: 45px;
+  width: 45px;
   grid-column-start: 1;
   align-self: center;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .share .name,
 .share .date {
   grid-column-start: 2;
   font-size: 13px;
+}
+
+.share .name {
+  font-weight: 500;
+  color: hsl(217, 19%, 35%);
+}
+
+.share .date {
+  color: hsl(214, 17%, 51%);
 }
 
 .share .shareIcon {
@@ -63,6 +81,10 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 30px;
+  height: 35px;
+  width: 35px;
   align-self: center;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: flex-end;
 }
