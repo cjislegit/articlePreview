@@ -88,3 +88,33 @@ body {
   grid-row-end: 3;
   justify-self: flex-end;
 }
+
+.activeShare {
+  margin-top: 35px;
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+  border-radius: 0 0 15px 15px;
+  padding: 0 10% 0 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.activeShare .shareText {
+  color: hsl(214, 17%, 51%);
+}
+
+.activeShare .activeShareIcon {
+  background-color: hsl(214, 17%, 51%);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activeShare .activeShareIcon img {
+  height: 50%;
+}
