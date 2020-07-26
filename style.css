@@ -92,7 +92,7 @@ body {
 .activeShare {
   margin-top: 35px;
   background-color: hsl(217, 19%, 35%);
-  display: flex;
+  display: none;
   height: 60px;
   flex-direction: row;
   border-radius: 0 0 15px 15px;
