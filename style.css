@@ -129,7 +129,7 @@ body {
   }
 
   .pic {
-    width: 30vw;
+    width: 25vw;
     grid-row-start: 1;
     grid-row-end: span 2;
     border-radius: 15px 0 0 15px;
