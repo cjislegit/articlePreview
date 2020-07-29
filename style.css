@@ -78,17 +78,17 @@ body {
 
 .share .shareIcon {
   grid-column-start: 3;
-  background-image: url('./assets/icon-share.svg');
   background-color: hsl(210, 46%, 95%);
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 35px;
   width: 35px;
   align-self: center;
   grid-row-start: 1;
   grid-row-end: 3;
   justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .activeShare {
