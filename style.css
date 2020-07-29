@@ -162,4 +162,14 @@ body {
   .share .date {
     grid-row-start: 2;
   }
+
+  .activeShare {
+    width: 200px;
+    border-radius: 15px;
+    padding: 0 20px 0 20px;
+  }
+
+  .activeShare .activeShareIcon {
+    display: none;
+  }
 }
