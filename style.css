@@ -129,11 +129,12 @@ body {
   }
 
   .pic {
-    width: 25vw;
+    width: 20vw;
+    min-width: 384.4px;
+    height: 300px;
     grid-row-start: 1;
     grid-row-end: span 2;
     border-radius: 15px 0 0 15px;
-    height: 300px;
     background-size: contain;
     background-repeat: no-repeat;
   }
