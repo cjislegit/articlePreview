@@ -122,6 +122,10 @@ body {
   height: 50%;
 }
 
+.activeShare .activeShareTip {
+  display: none;
+}
+
 @media only screen and (min-width: 1000px) {
   .component {
     width: 1000px;
@@ -176,5 +180,16 @@ body {
 
   .activeShare .activeShareIcon {
     display: none;
+  }
+
+  .activeShare .activeShareTip {
+    display: block;
+    background-color: hsl(217, 19%, 35%);
+    height: 25px;
+    width: 25px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -20%;
+    right: 105px;
   }
 }
