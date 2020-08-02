@@ -143,6 +143,7 @@ body {
     border-radius: 15px 0 0 15px;
     background-size: contain;
     background-repeat: no-repeat;
+    max-width: 384.4px;
   }
 
   .share {
@@ -176,7 +177,7 @@ body {
     z-index: 1;
     position: absolute;
     bottom: 40%;
-    right: -40px;
+    right: -4%;
   }
 
   .activeShare .activeShareIcon {
