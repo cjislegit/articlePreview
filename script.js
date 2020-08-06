@@ -11,11 +11,13 @@ const shareClick = () => {
 const activeShareClick = () => {
   document.querySelector('.activeShare').style.display = 'none';
   document.querySelector('.share').style.display = 'grid';
+  activeShare = false;
 };
 
 const mobileShareClick = () => {
   document.querySelector('.share').style.display = 'none';
   document.querySelector('.activeShare').style.display = 'flex';
+  activeShare = true;
 };
 
 const desktopShareClick = (activeShare) => {
