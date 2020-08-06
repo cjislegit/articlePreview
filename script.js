@@ -39,8 +39,19 @@ const desktopShareClick = (activeShare) => {
 const windoChange = () => {
   if (window.innerWidth < 1000 && activeShare) {
     document.querySelector('.share').style.display = 'none';
-  } else if (window.innerWidth > 1000) {
+    document.querySelector('.shareIcon').style.backgroundColor =
+      'hsl(210, 46%, 95%)';
+    document.querySelector('.shareIconArrow').style.fill = '#6d7f97';
+  } else if (window.innerWidth > 1000 && activeShare) {
     document.querySelector('.share').style.display = 'grid';
+    document.querySelector('.shareIcon').style.backgroundColor =
+      'hsl(214, 17%, 51%)';
+    document.querySelector('.shareIconArrow').style.fill = '#FFFFFF';
+  } else if (window.innerWidth > 1000 && !activeShare) {
+    document.querySelector('.share').style.display = 'grid';
+    document.querySelector('.shareIcon').style.backgroundColor =
+      'hsl(210, 46%, 95%)';
+    document.querySelector('.shareIconArrow').style.fill = '#6d7f97';
   }
 };
 
