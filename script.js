@@ -34,7 +34,18 @@ const desktopShareClick = (activeShare) => {
   }
 };
 
+const windoChange = () => {
+  if (window.innerWidth < 1000 && activeShare) {
+    document.querySelector('.share').style.display = 'none';
+  } else if (window.innerWidth > 1000) {
+    document.querySelector('.share').style.display = 'grid';
+  }
+};
+
 document.querySelector('.shareIcon').addEventListener('click', shareClick);
+
 document
   .querySelector('.activeShareIcon')
   .addEventListener('click', activeShareClick);
+
+window.addEventListener('resize', windoChange);
